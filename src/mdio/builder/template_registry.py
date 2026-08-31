@@ -32,6 +32,7 @@ from mdio.builder.templates.seismic_3d_receiver_gathers import Seismic3DReceiver
 from mdio.builder.templates.seismic_3d_shot_receiver_line import Seismic3DShotReceiverLineGathersTemplate
 from mdio.builder.templates.seismic_3d_streamer_field import Seismic3DStreamerFieldRecordsTemplate
 from mdio.builder.templates.seismic_3d_streamer_shot import Seismic3DStreamerShotGathersTemplate
+from mdio.builder.templates.side_scan_2d import SideScan2DTemplate
 
 if TYPE_CHECKING:
     from mdio.builder.templates.base import AbstractDatasetTemplate
@@ -154,6 +155,9 @@ class TemplateRegistry:
 
         # Land/OBC shot-receiver data
         self.register(Seismic3DShotReceiverLineGathersTemplate())
+
+        # Side-scan sonar (XTF / waterfall)
+        self.register(SideScan2DTemplate("time"))
 
     def get(self, template_name: str) -> AbstractDatasetTemplate:
         """Get an instance of a template from the registry by its name.

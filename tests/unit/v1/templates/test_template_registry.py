@@ -39,6 +39,7 @@ EXPECTED_DEFAULT_TEMPLATE_NAMES = [
     "StreamerFieldRecords3D",
     "ObnReceiverGathers3D",
     "ShotReceiverLineGathers3D",
+    "SideScan2DTime",
 ]
 
 
