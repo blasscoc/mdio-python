@@ -11,7 +11,6 @@ from mdio.builder.schemas.v1.units import LengthUnitModel
 from mdio.builder.schemas.v1.units import TimeUnitEnum
 from mdio.builder.schemas.v1.units import TimeUnitModel
 from mdio.builder.templates.side_scan_2d import SideScan2DTemplate
-from mdio.builder.templates.types import SeismicDataDomain
 
 UNITS_METER = LengthUnitModel(length=LengthUnitEnum.METER)
 UNITS_SECOND = TimeUnitModel(time=TimeUnitEnum.SECOND)
